@@ -39,3 +39,50 @@ export interface iEducacion {
     pais: number,
     titulado: boolean,
 }
+
+export interface iInvestigacion {
+    descripcion: string,
+    documento: string,
+    fecha: string,
+    id: number,
+    pais: number,
+    titulo: string,
+    url: string
+}
+
+export interface iLogro {
+    descripcion: string,
+    documento: string,
+    titulo: string,
+    url: string
+}
+
+export interface iHabilidadDura {
+    id: string,
+    experiencia: string, //BASICO, INTERMEDIO, AVANZADO
+    nombre: string,
+
+}
+
+export interface iPerfil {
+    apellido: string,
+    ciudad: string,
+    habilidadesDuras: [iHabilidadDura],
+    nombre: string,
+    pais: string,
+    titulo: string
+}
+
+export interface iSeguidor {
+    profesionalId: number
+}
+
+
+export interface iSobreMiImagen {
+    documento: string,
+    id: number
+}
+
+export interface iVisita {
+    profesionalId: number
+}
