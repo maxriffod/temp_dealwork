@@ -86,3 +86,14 @@ export interface iSobreMiImagen {
 export interface iVisita {
     profesionalId: number
 }
+
+export interface iExperiencia {
+    actual: true,
+    cargo: string,
+    descripcion: string,
+    empresa: string,
+    fechaFin: string,
+    fechaInicio: string,
+    id: number,
+    pais: number
+}
