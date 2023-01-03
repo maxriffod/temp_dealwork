@@ -316,4 +316,60 @@ export class ProfesionalService {
       }
     );
   }
+
+  async getCarreras(token: String) { //Ejemplo de método GET
+
+    //Retornamos directamente la respuesta, luego de recibirla
+    return await axios.get<iApiResponse>(
+      properties.API.BASE + properties.API.ENDPOINTS.CARRERA, //Todas las variables pasadas a URL que no sean string, deben ser transformadas a string usando .toString()
+      { //Axios Config
+        headers: { //Headers personalizados
+          Accept: 'application/json',
+          Authorization: token.toString()
+        }
+      }
+    );
+  }
+
+  async getHabilidadesDuras(token: String) { //Ejemplo de método GET
+
+    //Retornamos directamente la respuesta, luego de recibirla
+    return await axios.get<iApiResponse>(
+      properties.API.BASE + properties.API.ENDPOINTS.DURAS, //Todas las variables pasadas a URL que no sean string, deben ser transformadas a string usando .toString()
+      { //Axios Config
+        headers: { //Headers personalizados
+          Accept: 'application/json',
+          Authorization: token.toString()
+        }
+      }
+    );
+  }
+
+  async getHabilidadesBlandas(token: String) { //Ejemplo de método GET
+
+    //Retornamos directamente la respuesta, luego de recibirla
+    return await axios.get<iApiResponse>(
+      properties.API.BASE + properties.API.ENDPOINTS.BLANDAS, //Todas las variables pasadas a URL que no sean string, deben ser transformadas a string usando .toString()
+      { //Axios Config
+        headers: { //Headers personalizados
+          Accept: 'application/json',
+          Authorization: token.toString()
+        }
+      }
+    );
+  }
+
+  async getPaises(token: String) { //Ejemplo de método GET
+
+    //Retornamos directamente la respuesta, luego de recibirla
+    return await axios.get<iApiResponse>(
+      properties.API.BASE + properties.API.ENDPOINTS.PAISES, //Todas las variables pasadas a URL que no sean string, deben ser transformadas a string usando .toString()
+      { //Axios Config
+        headers: { //Headers personalizados
+          Accept: 'application/json',
+          Authorization: token.toString()
+        }
+      }
+    );
+  }
 }

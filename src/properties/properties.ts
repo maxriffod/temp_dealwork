@@ -16,6 +16,11 @@ export const properties = { //Recomiendo dejar todos los datos posibles aquí y 
             IMAGEN_SOBRE_MI: '/profesional/{id}/sobre-mi-imagen',
             VISITA: '/profesional/{id}/visita',
             REGISTER: '/profesional/register',
+            BLANDAS: '/habilidades/blandas',
+            DURAS: '/habilidades/duras',
+            PAISES: '/paises',
+            CARRERA: '/carrera'
+
 
         }
     }
